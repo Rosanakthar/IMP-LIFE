@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+  background-color: rgb(243, 9, 9);
+}
+
+.navigation{
+  background-color: rgb(206, 36, 36);
+  height: 10vh;
+}
+.btn{
+  border: chartreuse 5px;
+  padding: 5%;
+  width: auto;
+  background-color: rgb(253, 183, 6);
+  color: black;
+  border-radius: 20px;
+}
+.navbar-nav > li{
+  padding-left:50px;
+  padding-right:50px;
+  font-size: 20px;
+}
+
+.navbar-brand{
+  font-size: 50px;
+  color: red;
+ 
+  font-family: auto;
+  font-style: inherit;
+  font-variant: petite-caps;
+  
+}
+/* .navbar{
+  display: flex;
+  float: right;
+} */
+section{
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  position: relative;
+  background-image: url('../public/hero.jpg');
+  color: rgb(255, 217, 0);
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+footer {
+  position: fixed;
+  height: 50px;
+  background-color: rgb(32, 20, 20);
+  color: azure;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+/* form */
+input[type=text],input[type=password],select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button[type=submit],.btnh {
+  width: 100%;
+  background-color: rgb(253, 183, 6);
+  color: black;
+  font-family: bold;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+}
+label{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 500;
+  font-style: initial;
+  font-size: 20px;
+}
+
+.img{
+  width: 100%;
+}
