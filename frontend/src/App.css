@@ -100,3 +100,9 @@ label{
 .img{
   width: 100%;
 }
+li.dot{
+  list-style-type: none;
+}
+.cont{
+  width: 50%;
+}

@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 class Login extends Component {
 
@@ -25,7 +28,16 @@ class Login extends Component {
         }).then(resjson=>{
             console.log(resjson);
             if(resjson.path!='/'){
-                alert(resjson.message);
+                // alert(resjson.message);
+                toast.warn(resjson.message, {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    });
                 return;
             }
             localStorage.setItem('token',resjson.token);
@@ -39,9 +51,21 @@ class Login extends Component {
         console.log(this.state);
         return(
             <React.Fragment>
+                <ToastContainer
+                  position="top-right"
+                  autoClose={5000}
+                  hideProgressBar={false}
+                  newestOnTop={false}
+                  closeOnClick
+                  rtl={false}
+                  pauseOnFocusLoss
+                  draggable
+                  pauseOnHover
+                />
                 <br /> <br />
-                <div className="container">
+                <div className="container cont">
                 <div className="card">
+                    <h4 className="text-center">Login</h4>
                 <form onSubmit={this.submitHandler}>
                     <label>Number:</label><br />
                     <input type="text" placehold="Enter Name" onChange={(event)=>this.setState({number:event.target.value})}></input><br />

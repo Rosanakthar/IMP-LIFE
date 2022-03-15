@@ -68,8 +68,9 @@ class Signup extends Component {
         return(
             
             <div>
-                <div className='container'>
+                <div className='container cont'>
                     <div className='card'>
+                    <h4 className="text-center">Signup</h4>
                 <form onSubmit={this.submitHandler}>
                     <label>Name:</label><br />
                     <input type="text" placehold="Enter Name" onChange={(event)=>this.setState({name:event.target.value})}></input><br />

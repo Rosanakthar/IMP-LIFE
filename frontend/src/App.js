@@ -57,8 +57,8 @@ function App (){
     </ul> 
   </div>
   </div>:
-    <li>
-    <Link to='/login'><button className=" btn"><b>LOGIN</b></button></Link>
+    <li className="dot">
+    <Link to='/login'><button className="btn"><b>LOGIN</b></button></Link>
       </li>}
 </nav>
     
@@ -73,7 +73,7 @@ function App (){
       
 
      
-
+     <br /><br />
      <footer className='text-center'>
        <h3>@implife</h3>
      </footer>
